@@ -209,7 +209,7 @@ const getProduct = async function (req, res) {
     };
 
 //-------------------------getting product details from productModel-------------------------------------------
-    let data = await productModel.find({ ...query }).sort({ price: filter.priceSort });
+    let data = await productModel.find({ ...query }).sort({ price: filter.priceSort }); //rest method
 
 //-------------------------if there is no product by given query it gives a response that "No data Found!!"-------------------------------------
     if (data.length == 0) {

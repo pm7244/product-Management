@@ -36,7 +36,7 @@ const authentication = function (req, res, next) {
 
     req.decodedToken = decodedToken
     req["tokenUserId"] = decodedToken.userId
-    req.decodedToken = decodedToken
+    //req.decodedToken = decodedToken
   
 
     next()

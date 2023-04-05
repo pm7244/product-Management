@@ -6,8 +6,7 @@ const cartController = require('../controller/cartController')
 const orderController = require('../controller/orderController')
 const auth = require('../auth/auth');
 const {
-    Route53RecoveryControlConfig
-} = require('aws-sdk');
+    Route53RecoveryControlConfig} = require('aws-sdk');
 
 
 router.get("/testme", function (req, res) {
